@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Xnmob",
-  description: "Your Best Sex Website",
+  title: "Naijaleakhub | Best hot video platform",
+  description: "Your number one for the best sex videos, from milf, lesbian, masturbation, ebony and so much more",
 };
 
 export default function RootLayout({ children }) {
