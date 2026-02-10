@@ -20,7 +20,6 @@ async function fetchVideoData(id) {
     return null;
   }
 }
-console.log(res)
 
 // Function to generate metadata dynamically
 export async function generateMetadata({ params }) {

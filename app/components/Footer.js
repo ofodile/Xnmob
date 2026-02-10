@@ -11,7 +11,7 @@ const Footer = () => {
           <li><Link href="/about">About</Link></li>
           <li><Link href="/contact">Contact</Link></li>
         </ul>
-        <p className="credit">&copy; 2026 Naijaleakhub. All rights reserved.</p>
+        <p className="credit">&copy; 2026 DarkRedHub. All rights reserved.</p>
       </div>
     </footer>
   )
