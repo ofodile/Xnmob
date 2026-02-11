@@ -1,6 +1,8 @@
-import Link from "next/link";
+// Page-level ISR (rebuild every 30 minutes)
+export const revalidate = 1800;
+
 import "./css/category.css";
-import Adcode1 from './components/Adcode1'
+import Adcode1 from './components/Adcode1';
 import Adcode2 from "./components/Adcode2";
 
 export default async function Home({ searchParams }) {
@@ -8,30 +10,29 @@ export default async function Home({ searchParams }) {
     "https://www.eporner.com/api/v2/video/search/?query=All&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
 
   let videos = [];
-  
-  
-async function fetchWithRetry(url, retries = 3) {
-  for (let i = 0; i < retries; i++) {
-    try {
-      const res = await fetch(url, { cache: "no-store" });
-      if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
-      return await res.json();
-    } catch (error) {
-      if (i === retries - 1) throw error;
+
+  async function fetchWithRetry(url, retries = 3) {
+    for (let i = 0; i < retries; i++) {
+      try {
+        const res = await fetch(url); // ✅ No fetch-level ISR
+        if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
+        return await res.json();
+      } catch (error) {
+        if (i === retries - 1) throw error;
+      }
     }
   }
-}
 
-try {
-  const json = await fetchWithRetry(url);
-  videos = json.videos.filter((video) => video.length_sec <= 1800);
-} catch (error) {
-  console.error("Error fetching data:", error);
-}
+  try {
+    const json = await fetchWithRetry(url);
+    videos = json.videos.filter((video) => video.length_sec <= 1800);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
 
-  // **Await searchParams to properly access the query parameter**
-  const params = await searchParams; // Awaiting searchParams
-  const currentPage = parseInt(params?.page || "1", 10);
+  const params = await searchParams;
+const currentPage = parseInt(params?.page || "1", 10);
+
 
   const itemsPerPage = 30;
   const totalItems = videos.length;
@@ -49,6 +50,7 @@ try {
           <Adcode2 />
         </div>
       </div>
+
       {paginatedVideos.length > 0 ? (
         <div className="container">
           {paginatedVideos.map((video) => (
@@ -73,23 +75,21 @@ try {
                 <h2 className="title">{video.title}</h2>
               )}
 
-              <p className="tag">{video.keywords.split(",")[2]}</p>
+              <p className="tag">
+                {video.keywords?.split(",")[2] || ""}
+              </p>
             </a>
           ))}
 
-          {/* Pagination Controls */}
           <div className="pagination">
-            {/* Previous Button */}
             {currentPage > 1 && (
               <a href={`/?page=${currentPage - 1}`} className="pagination-link">
                 Previous
               </a>
             )}
 
-            {/* Current Page Indicator */}
             <span className="current-page">Page {currentPage}</span>
 
-            {/* Next Button */}
             {currentPage < totalPages && (
               <a href={`/?page=${currentPage + 1}`} className="pagination-link">
                 Next

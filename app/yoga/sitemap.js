@@ -1,6 +1,6 @@
 export default async function sitemap() {
-  const baseUrl = "https://www.darkredhub.site"; 
-  const category = "https://www.darkredhub.site/yoga"
+  const baseUrl = "https://www.naijaleakhub.com.ng"; 
+  const category = "https://www.naijaleakhub.com.ng/yoga"
   const apiUrl = "https://www.eporner.com/api/v2/video/search/?query=yoga&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
 
   let videos = [];

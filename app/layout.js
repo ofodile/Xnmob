@@ -14,8 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Darkredhub | Best hot video platform",
+  title: "Naijaleakhub | Best hot video platform",
   description: "Your number one for the best sex videos, from milf, lesbian, masturbation, ebony and so much more",
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
