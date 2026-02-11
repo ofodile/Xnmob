@@ -6,7 +6,7 @@ import Adcode2 from "../components/Adcode2";
 
 export default async function Scissoring({ searchParams }) {
   const url =
-    "https://www.eporner.com/api/v2/video/search/?query=Scissoring&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
+    "https://www.eporner.com/api/v2/video/search/?query=scissoring&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
 
   let videos = [];
 

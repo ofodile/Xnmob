@@ -6,7 +6,7 @@ import Adcode2 from "../components/Adcode2";
 
 export default async function Hardcore({ searchParams }) {
   const url =
-    "https://www.eporner.com/api/v2/video/search/?query=handcore&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
+    "https://www.eporner.com/api/v2/video/search/?query=hardcore&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
 
   let videos = [];
 
@@ -50,7 +50,7 @@ const currentPage = parseInt(params?.page || "1", 10);
         </div>
       </div>
 
-      <h3 className="category-h3">Handcore Category</h3>
+      <h3 className="category-h3">Hardcore Category</h3>
 
       {paginatedVideos.length > 0 ? (
         <div className="container">
@@ -82,7 +82,7 @@ const currentPage = parseInt(params?.page || "1", 10);
           <div className="pagination">
             {currentPage > 1 && (
               <a
-                href={`/handcore/?page=${currentPage - 1}`}
+                href={`/hardcore/?page=${currentPage - 1}`}
                 className="pagination-link"
               >
                 Previous
