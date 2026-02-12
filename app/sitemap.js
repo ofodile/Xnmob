@@ -1,5 +1,5 @@
 export default async function sitemap() {
-  const baseUrl = "https://www.darkredhub.site"; 
+  const baseUrl = "https://www.naijaleakhub.com.ng"; 
   const apiUrl = "https://www.eporner.com/api/v2/video/search/?query=All&per_page=500&page=1&thumbsize=big&order=latest&gay=0&lq=1&format=json";
 
   let videos = [];
