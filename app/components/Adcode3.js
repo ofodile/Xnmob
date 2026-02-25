@@ -1,35 +1,35 @@
-'use client';
+// components/Adcode3.js
 
-import { useEffect } from 'react';
+"use client"
+import { useEffect } from "react";
 
 const Adcode3 = () => {
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      if (typeof window.atAsyncOptions !== 'object') {
+    if (typeof window !== "undefined") {
+      if (typeof window.atAsyncOptions !== "object") {
         window.atAsyncOptions = [];
       }
 
       window.atAsyncOptions.push({
-        key: '8b82e0c43879d0dafd34f34e20972d0d',
-        format: 'js',
+        key: "d133bb74300857cd99679135032291c7",
+        format: "js",
         async: true,
-        container: 'atContainer-8b82e0c43879d0dafd34f34e20972d0d',
+        container: "atContainer-d133bb74300857cd99679135032291c7",
         params: {},
       });
 
-      const script = document.createElement('script');
-      script.type = 'text/javascript';
+      const script = document.createElement("script");
+      script.type = "text/javascript";
       script.async = true;
       script.src =
-        'http' +
-        (location.protocol === 'https:' ? 's' : '') +
-        '://stoolsymphony.com/8b82e0c43879d0dafd34f34e20972d0d/invoke.js';
+        "https://www.highperformanceformat.com/d133bb74300857cd99679135032291c7/invoke.js";
+
       document.head.appendChild(script);
     }
   }, []);
 
   return (
-    <div id="atContainer-8b82e0c43879d0dafd34f34e20972d0d" />
+    <div id="atContainer-d133bb74300857cd99679135032291c7" />
   );
 };
 

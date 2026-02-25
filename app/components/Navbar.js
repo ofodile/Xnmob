@@ -103,8 +103,8 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="/blowjob" className="block py-2 text-white px-3 text-gray-900 dark:text-white dark:font-bold font-bold">
-                  Blowjob
+                <a href="/african" className="block py-2 text-white px-3 text-gray-900 dark:text-white dark:font-bold font-bold">
+                  African
                 </a>
               </li>
               <li>

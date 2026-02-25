@@ -10,6 +10,7 @@ export default function moreCategories() {
       <a href="/lesbian" className="link">Lesbian</a>
       <a href="/masturbation" className="link">Masturbation</a>
       <a href="/anal" className="link">Anal</a>
+      <a href="/african" className="link">African</a>
       <a href="/threesome" className="link">Threesome</a>
       <a href="/milf" className="link">Milf</a>
       <a href="/footjob" className="link">Footjob</a>

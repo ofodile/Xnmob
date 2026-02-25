@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .video-ad-1{
@@ -48,6 +49,10 @@ iframe{
     margin-top: 30px;
     margin-bottom: 10px;
     font-weight: bold;
+}
+
+.custom-video{
+  margin-top: 20px;
 }
 
   @media only screen and (max-width: 600px) {

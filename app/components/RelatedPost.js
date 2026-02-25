@@ -48,7 +48,7 @@ function getRandomText() {
                 <img
                   src={video.default_thumb.src}
                   alt={video.title}
-                  className="related-thumbnil"
+                  className="related-thumbnail"
                 />
                 <p className="related-video-time">{video.length_min} min</p>
               </div>
