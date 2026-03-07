@@ -48,9 +48,11 @@ export default async function Video({ params }) {
      <div className="video-ad">
         <div className="video-ad-1">
           <Adcode1 />
+          <div data-banner-id="1451221"></div>
         </div>
         <div className="video-ad-2">
           <Adcode2 />
+          <div data-banner-id="1451221"></div>
         </div>
       </div>
     <div className="video-container">
@@ -66,7 +68,7 @@ export default async function Video({ params }) {
         ) : (
           <p>Video not available.</p>
         )}
-
+        <div data-banner-id="1451221"></div>
         <RelatedPost />
       </div>
 

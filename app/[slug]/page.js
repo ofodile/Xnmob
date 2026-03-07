@@ -8,6 +8,7 @@ import Adcode1 from "../components/Adcode1";
 import Adcode2 from "../components/Adcode2";
 import Adcode3 from "../components/Adcode3";
 import Adcode4 from "../components/Adcode4";
+import Adnative from "../components/Adnative";
 
 // Fetch video data with ISR caching
 async function fetchVideoData(id) {
@@ -79,16 +80,27 @@ export default async function Video({ params }) {
           ) : (
             <p>Video not available.</p>
           )}
-
+          <a href="https://www.effectivegatecpm.com/uc2p5erq?key=5853c16022f4dbc3dadb4fe0f2308328">
+              <img
+                  src="ads.jpg"
+                  alt="ads"
+                  className="img-ads"
+                />
+          </a>
+          <div data-banner-id="1451221"></div>
           <RelatedPost />
         </div>
 
         <div className="section-two">
           <div className="video-ad-3">
             <Adcode3 />
+            <div data-banner-id="1451221"></div>
           </div>
           <br />
+          <Adnative />
+          <br />
           <div className="video-ad-4">
+            <div data-banner-id="1451221"></div>
             <Adcode4 />
           </div>
         </div>
