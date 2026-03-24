@@ -30,9 +30,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <Script
-          src="https://pl25151859.effectivegatecpm.com/9f/3a/db/9f3adb53ae9324b611de693d6bf93ffa.js"
-          strategy="beforeInteractive"
+       <Script
+          src="https://offevasionrecruit.com/9f/3a/db/9f3adb53ae9324b611de693d6bf93ffa.js"
+          strategy="afterInteractive"
         />
       </head>
       <body
