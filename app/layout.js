@@ -30,10 +30,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-       <Script
-          src="https://offevasionrecruit.com/9f/3a/db/9f3adb53ae9324b611de693d6bf93ffa.js"
-          strategy="afterInteractive"
-        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -42,6 +38,10 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <GoogleAnalytics gaId="G-P2H5LD1362" />
+        <Script
+          src="https://offevasionrecruit.com/06/cc/2d/06cc2d36d868650de56fa622f863920b.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
