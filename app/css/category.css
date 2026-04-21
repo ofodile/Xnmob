@@ -23,6 +23,13 @@ html, body {
     margin-top: 10px;
   }
 
+    .video-ad-1{
+      display: block;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
   .home-ad-1{
     display: none;
   }

@@ -10,6 +10,7 @@ html, body {
     margin: 30px;
     gap: 10px;
   }
+  
 
   .video-ad{
     display: flex;
@@ -30,7 +31,13 @@ html, body {
     margin-bottom: 15px;
   }
   
-
+.smart-ad1{
+  margin-top: 20px;
+  border: 2px solid #e5e5e5;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 8px;
+}
 
 .video-title{
     font-size: 20px;
@@ -44,9 +51,7 @@ iframe{
     height: 400px;
     margin-top: 30px;
   }
-
   
-
   .related-h2{
     color: #313618;
     font-family: "Roboto", Sans-Serif;
@@ -79,8 +84,11 @@ iframe{
     iframe{
         height: 240px;
     }
+    
     .video-ad-1{
       display: block;
+      margin-left: 15px;
+      margin-right: 15px;
     }
 
     .video-ad-2{

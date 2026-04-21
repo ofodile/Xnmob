@@ -2,6 +2,7 @@
 export const revalidate = 1800;
 
 import "./css/category.css";
+import Link from "next/link";
 import Adcode1 from './components/Adcode1';
 import Adcode2 from "./components/Adcode2";
 
@@ -43,8 +44,12 @@ const currentPage = parseInt(params?.page || "1", 10);
   return (
     <>
       <div className="home-ad">
-        <div className="home-ad-1">
-          <Adcode1 />
+        <div className="video-ad-1">
+          <Link href="https://offevasionrecruit.com/w1y5xiren2?key=54106dba993f816a20069b9e78f49171">
+            <img
+             src="/smartpic2.jpg" 
+            />
+          </Link>
         </div>
         <div className="home-ad-2">
           <Adcode2 />
@@ -97,9 +102,20 @@ const currentPage = parseInt(params?.page || "1", 10);
             )}
           </div>
         </div>
+        
+        
       ) : (
         <p>No videos found</p>
       )}
+      
+         <div className="video-ad-1">
+          <Link href="https://offevasionrecruit.com/w1y5xiren2?key=54106dba993f816a20069b9e78f49171">
+            <img
+             src="/smartpic.jpg" 
+            />
+          </Link>
+        </div>
+      
     </>
   );
 }
