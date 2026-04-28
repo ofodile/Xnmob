@@ -58,13 +58,6 @@ export default async function Video({ params }) {
   return (
     <>
       <div className="video-ad">
-        <div className="video-ad-1">
-          <Link href="https://offevasionrecruit.com/w1y5xiren2?key=54106dba993f816a20069b9e78f49171">
-            <img
-             src="/smartpic2.jpg" 
-            />
-          </Link>
-        </div>
         <div className="video-ad-2">
           <Adcode2 />
         </div>
@@ -84,20 +77,7 @@ export default async function Video({ params }) {
           ) : (
             <p>Video not available.</p>
           )}
-          <div className="smart-ad1">
-            
-          <Link href="https://offevasionrecruit.com/w1y5xiren2?key=54106dba993f816a20069b9e78f49171">
-      <video
-        src="/videom.mp4"
-        muted
-        autoPlay
-        loop
-        playsInline
-        style={{ width: "100%", cursor: "pointer" }}
-      />
-    </Link>
 
-      </div>
           <div data-banner-id="1451221"></div>
           <RelatedPost />
         </div>

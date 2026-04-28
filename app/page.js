@@ -44,13 +44,6 @@ const currentPage = parseInt(params?.page || "1", 10);
   return (
     <>
       <div className="home-ad">
-        <div className="video-ad-1">
-          <Link href="https://offevasionrecruit.com/w1y5xiren2?key=54106dba993f816a20069b9e78f49171">
-            <img
-             src="/smartpic2.jpg" 
-            />
-          </Link>
-        </div>
         <div className="home-ad-2">
           <Adcode2 />
         </div>
@@ -107,14 +100,6 @@ const currentPage = parseInt(params?.page || "1", 10);
       ) : (
         <p>No videos found</p>
       )}
-      
-         <div className="video-ad-1">
-          <Link href="https://offevasionrecruit.com/w1y5xiren2?key=54106dba993f816a20069b9e78f49171">
-            <img
-             src="/smartpic.jpg" 
-            />
-          </Link>
-        </div>
       
     </>
   );
