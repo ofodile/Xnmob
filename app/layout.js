@@ -38,10 +38,6 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <GoogleAnalytics gaId="G-P2H5LD1362" />
-        <Script
-          src="https://offevasionrecruit.com/06/cc/2d/06cc2d36d868650de56fa622f863920b.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );
